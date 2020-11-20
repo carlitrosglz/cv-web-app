@@ -1,0 +1,12 @@
+footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a {
+    color: #6e6e6e;
+}
+
+footer a:hover {
+    color: #357bb8;
+    text-decoration: none;
+}

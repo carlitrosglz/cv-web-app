@@ -1,5 +1,16 @@
-.slider-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.container img {
+    opacity: 0.5;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
