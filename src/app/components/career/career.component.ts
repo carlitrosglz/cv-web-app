@@ -11,7 +11,7 @@ export class CareerComponent implements OnInit {
   dataEducation: CareerEntry[] = [
     {
       initialDate: '2020',
-      title: 'Autodidacta',
+      title: 'Creación de aplicaciones con Angular',
       company: 'Udemy'
     },
     {
@@ -55,7 +55,29 @@ export class CareerComponent implements OnInit {
       title: 'Junior Android Developer',
       company: 'Happy Customer Box, S.L',
       description: 'Desarrollo desde cero de una aplicación Android nativa, para la digitalización de la experiencia gastrónomica ofrecida por el cliente.'
-    }
+    },
+    {
+      initialDate: 'Julio 2019',
+      endDate: 'Octubre 2019',
+      title: 'Dependiente de comercio',
+      company: 'Kiosco Canuda (Rambla de Barcelona)',
+      description: 'Atención al cliente, venta, control, recepción y reposición de productos'
+    },
+    {
+      initialDate: 'Abril 2017',
+      endDate: 'Diciembre 2017',
+      title: 'Comercial de ventas',
+      company: 'Planet Sport, S.L',
+      description: 'Reposición y venta de artículos a cartera de clientes propia, dentro del área turística de Barcelona'
+    },
+    {
+      initialDate: 'Mayo 2016',
+      endDate: 'Julio 2016',
+      title: 'Ayudante de producción de radio',
+      company: 'Radio Municipal Terrassa',
+      description: 'Gestión de los invitados del programa, planificación de la escaleta diaria y semanal, administración de las RRSS'
+    },
+    
   ];
 
   constructor() { }
