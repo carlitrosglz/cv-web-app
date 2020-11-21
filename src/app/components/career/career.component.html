@@ -1,12 +1,11 @@
-<h1 class="main-title">TRAYECTORIA</h1>
+<!-- <h1 class="main-title">EXPERIENCIA</h1>
 <p class="subtitle">Resumen de mi trayectoria profesional y educativa</p>
-<br>
+<br> -->
 
-<div class="row mb-5">
-    <div class="col-sm-6">
-        <app-timeline></app-timeline>
-    </div>
-    <div class="col-sm-6">
-        <app-timeline></app-timeline>
-    </div>
-</div>
+<h1 class="main-title">EXPERIENCIA</h1>
+<br>
+<app-career-entry [entry]="entry" *ngFor="let entry of dataWork"></app-career-entry>
+
+<h1 class="main-title">EDUCACIÓN</h1>
+<br>
+<app-career-entry [entry]="entry" *ngFor="let entry of dataEducation"></app-career-entry>

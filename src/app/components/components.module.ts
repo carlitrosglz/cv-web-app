@@ -9,7 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
 import { SkillsComponent } from './skills/skills.component';
 import { CareerComponent } from './career/career.component';
-import { TimelineComponent } from './timeline/timeline.component';
+import { CareerEntryComponent } from './career-entry/career-entry.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     SliderComponent,
     SkillsComponent,
     CareerComponent,
-    TimelineComponent
+    CareerEntryComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     FooterComponent,
     SliderComponent,
     SkillsComponent,
-    CareerComponent
+    CareerComponent,
+    ContactComponent
   ]
 })
 export class ComponentsModule { }

@@ -30,3 +30,11 @@ h2 span {
     border: 0;
     padding: 10px;
 }
+
+@media (max-width: 768px) {
+    .image-grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+    }
+}
