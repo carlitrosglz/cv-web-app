@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
 import { SkillsComponent } from './skills/skills.component';
 import { CareerComponent } from './career/career.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CareerComponent } from './career/career.component';
     FooterComponent,
     SliderComponent,
     SkillsComponent,
-    CareerComponent
+    CareerComponent,
+    TimelineComponent
   ],
   imports: [
     CommonModule,
