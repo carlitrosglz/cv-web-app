@@ -7,3 +7,26 @@
     font-weight: 100;
     color: #6e6e6e;
 }
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+
+h2 span {
+    display: list-item;
+    list-style-type: square;
+}
+
+.image-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+}
+
+.img-thumbnail {
+    border: 0;
+    padding: 10px;
+}
