@@ -1,0 +1,26 @@
+.career-content {
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+.career-content h3 {
+    font-size: 1.4rem;
+}
+
+.career-description {
+    font-weight: 300;
+}
+
+.career-date {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .career-date {
+        text-align: left;
+        margin-top: 5px;
+    }
+}

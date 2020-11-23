@@ -4,24 +4,24 @@ import { RouterModule } from '@angular/router';
 
 // our components
 import { NavbarComponent } from './navbar/navbar.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
-import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 import { CareerComponent } from './career/career.component';
 import { CareerEntryComponent } from './career-entry/career-entry.component';
+import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    ProjectsComponent,
-    FooterComponent,
     SliderComponent,
-    SkillsComponent,
+    ProjectsComponent,
     CareerComponent,
     CareerEntryComponent,
-    ContactComponent
+    SkillsComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -29,12 +29,12 @@ import { ContactComponent } from './contact/contact.component';
   ],
   exports: [
     NavbarComponent,
-    ProjectsComponent,
-    FooterComponent,
     SliderComponent,
-    SkillsComponent,
+    ProjectsComponent,
     CareerComponent,
-    ContactComponent
+    SkillsComponent,
+    ContactComponent,
+    FooterComponent
   ]
 })
 export class ComponentsModule { }
