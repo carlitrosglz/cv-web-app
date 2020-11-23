@@ -24,13 +24,16 @@ span {
     margin-left: 10px;
 }
 
+.contact-icon {
+    text-align: center;
+}
+
 @media(max-width: 768px) {
     .contact-info {
         display: flex;
         justify-content: center;
     }
-    .linkedin-redirect {
-        display: flex;
+    .social-media {
         justify-content: center;
     }
     form {
