@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DataService } from '../../services/data.service';
+import { PersonalInfoModel } from '../../interfaces/data.interface';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  personalInfo: PersonalInfoModel;
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.dataService.getPersonalInfo()
+    .subscribe( data => this.personalInfo = data[0]);
   }
-
 }

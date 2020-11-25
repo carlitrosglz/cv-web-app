@@ -3,35 +3,35 @@
 <br>
 
 <div class="row">
-    <div class="col-md-4">
+    <div *ngIf="personalInfo" class="col-md-4">
         <div class="contact-info">
             <table>
                 <tr>
                     <td class="contact-icon"><i class="mb-3 fa fa-2x fa-user-alt"></i></td>
-                    <td><span>Carlos González Espejo</span></td>
+                    <td><span>{{ personalInfo.name }} {{ personalInfo.firstSurname }} {{ personalInfo.secondSurname }}</span></td>
                 </tr>
                 <tr>
                     <td class="contact-icon"><i class="mb-3 fa fa-2x fa-tv"></i></td>
-                    <td><span>Software developer</span></td>
+                    <td><span>{{ personalInfo.profession }}</span></td>
                 </tr>
                 <tr>
                     <td class="contact-icon"><i class="mb-3 fa fa-2x fa-city"></i></td>
-                    <td><span>Terrassa, Barcelona</span></td>
+                    <td><span>{{ personalInfo.city }}, {{ personalInfo.province }}</span></td>
                 </tr>
                 <tr>
                     <td class="contact-icon"><i class="mb-3 fa fa-2x fa-envelope"></i></td>
-                    <td><span>carlosglzespejo@gmail.com</span></td>
+                    <td><span>{{ personalInfo.email }}</span></td>
                 </tr>
                 <tr>
                     <td class="contact-icon"><i class="mb-3 fa fa-2x fa-phone"></i></td>
-                    <td><span>+34 663 47 09 57</span></td>
+                    <td><span>+{{ personalInfo.phonePrefix }} {{ personalInfo.phone }}</span></td>
                 </tr>
             </table>
         </div>
 
         <div class="social-media d-flex">
-            <a href="https://www.linkedin.com/in/carlosgonzalezespejo/" target="_blank"><i class="mt-4 fab fa-2x fa-linkedin"></i></a>
-            <a class="ml-2" href="https://github.com/carlitrosglz/" target="_blank"><i class="mt-4 fab fa-2x fa-github-square"></i></a>
+            <a href="{{ personalInfo.linkedin }}" target="_blank"><i class="mt-4 fab fa-2x fa-linkedin"></i></a>
+            <a class="ml-2" href="{{ personalInfo.github }}" target="_blank"><i class="mt-4 fab fa-2x fa-github-square"></i></a>
         </div>
 
     </div>

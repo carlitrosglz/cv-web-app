@@ -41,22 +41,30 @@
 <br>
 
 <owl-carousel-o [options]="owlCarouselOptions">
-    <ng-container *ngFor="let i of [0, 0, 0, 0, 0]">
+    <ng-container *ngFor="let project of projectsList">
         <ng-template carouselSlide>
-            <img class="img-thumbnail" src="assets/images/projects/projects-suiffhome.png" alt="">
+            <img class="img-thumbnail" src="{{ project.mainImage }}" alt="">
             <div class="row">
                 <div class="col-12 text-center">
 
-                    <p class="project-title">Desarrollo de software en proyecto bancario</p>
-                    <p class="project-company">Estel Grup, S.L</p>
+                    <p class="project-title"><a href="{{ project.link }}" target="_blank">{{ project.title }} <i class="fas fa-external-link-alt"></i></a></p>
+                    <p class="project-company">{{ project.company }}</p>
                     <hr>
-                    <p class="project-company">Aplicación móvil para realizar, en tiempo real, valoraciones funcionales de fuerza en acciones dinámicas e isométricas. Enfocada a profesionales del acondicionamiento físico y la rehabilitación.</p>
+                    <p class="project-description">{{ project.description }}</p>
 
-                    <div class="bean-row">
-                        <p class="bean">Android</p>
-                        <p class="bean">Android</p>
-                        <p class="bean">Android</p>
+                    <table>
+                        <tr></tr>
+                    </table>
+
+                    <div class="row bean-row">
+                        <div *ngFor="let bean of project.stack" class="col-lg-6 col-md-6">
+                            <p class="bean">{{ bean }}</p>
+                        </div>
+
                     </div>
+                    <!-- <div class="bean-row">
+                        <p *ngFor="let bean of project.stack" class="bean">{{ bean }}</p>
+                    </div> -->
                 </div>
             </div>
         </ng-template>

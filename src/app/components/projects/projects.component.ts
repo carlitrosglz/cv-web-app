@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { DataService } from '../../services/data.service';
+import { ProjectsModel } from '../../interfaces/data.interface';
 
 @Component({
   selector: 'app-projects',
@@ -32,8 +34,16 @@ export class ProjectsComponent implements OnInit {
     },
   };
 
-  constructor() { }
+  projectsList: ProjectsModel[] = [];
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.initializeProjects();
+  }
+
+  private initializeProjects(): void {
+    this.dataService.getAllProjects()
+      .subscribe( data => this.projectsList = data);
   }
 }

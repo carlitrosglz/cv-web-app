@@ -20,8 +20,15 @@ p {
     margin-top: -10px;
 }
 
+.project-description {
+    font-weight: 100;
+    font-size: 1rem;
+    text-align: justify;
+}
+
 .bean {
-    background-color: black;
+    background-color: #242424;
+    font-size: 0.8rem;
     color: white;
     display: list-item;
     text-align: center;
@@ -30,10 +37,18 @@ p {
 }
 
 .bean-row {
-    column-count: 3;
     justify-content: center;
 }
 
 hr {
     background-color: grey;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    text-decoration-line: none;
 }
