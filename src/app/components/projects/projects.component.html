@@ -40,7 +40,45 @@
 <p class="subtitle">Estos son algunos de mis últimos trabajos:</p>
 <br>
 
-<div class="card-columns align-items-center">
+<owl-carousel-o [options]="owlCarouselOptions">
+    <ng-container *ngFor="let i of [0, 0, 0, 0, 0]">
+        <ng-template carouselSlide>
+            <img class="img-thumbnail" src="assets/images/projects/projects-suiffhome.png" alt="">
+            <div class="row">
+                <div class="col-12 text-center">
+
+                    <p class="project-title">Desarrollo de software en proyecto bancario</p>
+                    <p class="project-company">Estel Grup, S.L</p>
+                    <hr>
+                    <p class="project-company">Aplicación móvil para realizar, en tiempo real, valoraciones funcionales de fuerza en acciones dinámicas e isométricas. Enfocada a profesionales del acondicionamiento físico y la rehabilitación.</p>
+
+                    <div class="bean-row">
+                        <p class="bean">Android</p>
+                        <p class="bean">Android</p>
+                        <p class="bean">Android</p>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </ng-container>
+</owl-carousel-o>
+<br>
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col">
+            <img class="img-thumbnail" src="assets/images/projects/projects-suiffpro.jpg" alt="">
+            <p>Prueba de descripcion</p>
+            <a href="">
+                <p>Enlace</p>
+            </a>
+            <p class="bean">Bean</p>
+
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="card-deck  ">
     <div class="card">
         <img class="card-img-top" src="assets/images/projects/projects-suiffhome.png" alt="Card image cap">
         <div class="card-body">
@@ -84,4 +122,4 @@
             <button class="btn btn-info btn-block">Más información</button>
         </div>
     </div>
-</div>
+</div> -->
