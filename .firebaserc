@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "cv-portfolio-carlos": {
+      "hosting": {
+        "myApp": [
+          "cv-portfolio-carlos"
+        ]
+      }
+    }
+  }
+}

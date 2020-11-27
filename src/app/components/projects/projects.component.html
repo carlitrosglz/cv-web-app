@@ -40,7 +40,53 @@
 <p class="subtitle">Estos son algunos de mis últimos trabajos:</p>
 <br>
 
-<div class="card-columns align-items-center">
+<owl-carousel-o [options]="owlCarouselOptions">
+    <ng-container *ngFor="let project of projectsList">
+        <ng-template carouselSlide>
+            <img class="img-thumbnail" src="{{ project.mainImage }}" alt="">
+            <div class="row">
+                <div class="col-12 text-center">
+
+                    <p class="project-title"><a href="{{ project.link }}" target="_blank">{{ project.title }} <i class="fas fa-external-link-alt"></i></a></p>
+                    <p class="project-company">{{ project.company }}</p>
+                    <hr>
+                    <p class="project-description">{{ project.description }}</p>
+
+                    <table>
+                        <tr></tr>
+                    </table>
+
+                    <div class="row bean-row">
+                        <div *ngFor="let bean of project.stack" class="col-lg-6 col-md-6">
+                            <p class="bean">{{ bean }}</p>
+                        </div>
+
+                    </div>
+                    <!-- <div class="bean-row">
+                        <p *ngFor="let bean of project.stack" class="bean">{{ bean }}</p>
+                    </div> -->
+                </div>
+            </div>
+        </ng-template>
+    </ng-container>
+</owl-carousel-o>
+<br>
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col">
+            <img class="img-thumbnail" src="assets/images/projects/projects-suiffpro.jpg" alt="">
+            <p>Prueba de descripcion</p>
+            <a href="">
+                <p>Enlace</p>
+            </a>
+            <p class="bean">Bean</p>
+
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="card-deck  ">
     <div class="card">
         <img class="card-img-top" src="assets/images/projects/projects-suiffhome.png" alt="Card image cap">
         <div class="card-body">
@@ -84,4 +130,4 @@
             <button class="btn btn-info btn-block">Más información</button>
         </div>
     </div>
-</div>
+</div> -->

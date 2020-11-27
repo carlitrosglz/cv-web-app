@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CareerEntry } from '../../interfaces/career-data.interface';
+
+import { CareerDataModel } from '../../interfaces/data.interface';
 
 @Component({
   selector: 'app-career-entry',
@@ -8,7 +9,7 @@ import { CareerEntry } from '../../interfaces/career-data.interface';
 })
 export class CareerEntryComponent implements OnInit {
 
-  @Input() entry: CareerEntry;
+  @Input() entry: CareerDataModel;
 
   constructor() { }
 

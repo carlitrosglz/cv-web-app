@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 // our components
 import { NavbarComponent } from './navbar/navbar.component';
@@ -25,7 +28,9 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule,
+    CarouselModule
   ],
   exports: [
     NavbarComponent,
