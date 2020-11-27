@@ -4,6 +4,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DataService } from '../../services/data.service';
 import { PersonalInfoModel } from '../../interfaces/data.interface';
 
+import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -30,7 +32,28 @@ export class ContactComponent implements OnInit {
   }
 
   sendMessage(): void {
-    this.form.reset();
+    this.dataService.sendMessage(
+      this.form.get('name').value,
+      this.form.get('email').value,
+      this.form.get('message').value)
+        .then( () => {
+          this.form.reset();
+
+          // sweetalert2
+          Swal.fire({
+            icon: 'success',
+            title: '¡Genial!',
+            text: '¡El mensaje ha sido enviado correctamente!\nEn breves me pondré en contacto contigo :)'
+          });
+        })
+        .catch( error => {
+          // sweetalert2
+          Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            text: 'Ha ocurrido un error y no se ha podido enviar el mensaje. Inténtalo de nuevo más tarde.'
+          });
+        });
   }
 
   private createForm(): void{

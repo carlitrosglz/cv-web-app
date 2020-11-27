@@ -38,6 +38,17 @@ export class DataService {
       (data: PersonalInfoModel[]) => data));
   }
 
+  public sendMessage(name: string, email: string, message: string): Promise<void> {
+    return this.firestore.collection('messages')
+      .doc()
+      .set({
+          name,
+          email,
+          message,
+          timestamp: Date.now()
+        });
+  }
+
   public getCV(): string {
     return this.CV_LINK;
   }
