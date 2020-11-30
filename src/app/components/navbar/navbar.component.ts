@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.navbarOnScroll();
   }
 
   onNavbarClick(section: string): void {
@@ -22,5 +23,17 @@ export class NavbarComponent implements OnInit {
 
   getCV(): string {
     return this.dataService.getCV();
+  }
+
+  private navbarOnScroll(): void {
+    window.addEventListener('scroll', () => {
+
+      const navbarElement = document.getElementById('stickyNavbar');
+      const backgroundElement = document.getElementById('navigation-image');
+      const limitScroll = backgroundElement.offsetHeight - navbarElement.offsetHeight;
+      const opacity = window.scrollY / limitScroll;
+
+      navbarElement.style.backgroundColor = `rgba(255,255,255,${opacity})`;
+    });
   }
 }

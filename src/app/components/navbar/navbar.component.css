@@ -146,10 +146,33 @@ nav .active-section span {
     color: #45489a;
 } */
 
+.nav-image {
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .nav-item {
     display: inline;
     padding-right: 20px;
     font-family: 'Poppins', sans-serif;
+}
+
+.landing-text {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-text h1 {
+    font-family: 'Poppins', monospace;
+    font-weight: 100;
+    color: white;
+    background-color: #242424;
+    padding: 10px 30px;
 }
 
 a:hover {
