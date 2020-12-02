@@ -1,87 +1,31 @@
-<!-- <div id="projects" class="d-flex flex-row p-5 flex-wrap justify-content-center p-3 align-items-center">
-    <div class="card m-2" style="width: 30rem;">
-        <img src="assets/images/projects/projects-suiffhome.png" class="card-img-top" alt="SUIFF Home">
-        <div class="card-body">
-            <h5 class="card-title h2">SUIFF</h5>
-            <p class="card-text">Aplicación móvil destinada a medir y mejorar nuestras marcas durante los entrenamientos, mediante la medición de la fuerza aplicada a través de un sensor durante los diferentes ejercicios que ofrece.</p>
-            <p><b>Stack tecnológico: Android nativo, Android Studio, Java, SQLite, REST API</b></p>
-            <button class="btn btn-info btn-block">Más información</button>
-        </div>
-    </div>
-    <div class="card m-2" style="width: 30rem;">
-        <img src="assets/images/projects/projects-suiffpro.jpg" class="card-img-top" alt="SUIFF Professional">
-        <div class="card-body">
-            <h5 class="card-title h2">SUIFF Professional</h5>
-            <p>Aplicación móvil para realizar, en tiempo real, valoraciones funcionales de fuerza en acciones dinámicas e isométricas. Enfocada a profesionales del acondicionamiento físico y la rehabilitación.</p>
-            <p><b>Stack tecnológico: Android nativo, Android Studio, Java, SQLite, REST API</b></p>
-            <button class="btn btn-info btn-block">Más información</button>
-        </div>
-    </div>
-    <div class="card m-2" style="width: 30rem;">
-        <img src="assets/images/projects/projects-lacaixa.png" class="card-img-top" alt="Indra Sistemas">
-        <div class="card-body">
-            <h5 class="card-title h2">Desarrollo de software en proyecto bancario</h5>
-            <p>Desarrollo de aplicaciones para un proyecto de CaixaBank.</p>
-            <p><b>Stack tecnológico: arquitectura ABSIS, TF7, Java, Spring, JSP, microservicios</b></p>
-            <button class="btn btn-info btn-block">Más información</button>
-        </div>
-    </div>
-    <div class="card m-2" style="width: 30rem;">
-        <img src="assets/images/projects/projects-smartrestaurant.png" class="card-img-top" alt="Happy Customer Box">
-        <div class="card-body">
-            <h5 class="card-title h2">Smart Restaurant</h5>
-            <p>Digitalización de la carta y de toda la experiencia gastronómica para restaurantes gourmet de Barcelona.</p>
-            <p><b>Stack tecnológico: Android nativo, Android Studio, Java, Firebase, sockets</b></p>
-            <button class="btn btn-info btn-block">Más información</button>
-        </div>
-    </div>
-</div> -->
-<h1 class="main-title">ÚLTIMOS PROYECTOS</h1>
+<h1 class="mt-5 main-title">ÚLTIMOS PROYECTOS</h1>
 <p class="subtitle">Estos son algunos de mis últimos trabajos:</p>
 <br>
 
-<div class="card-columns align-items-center">
-    <div class="card">
-        <img class="card-img-top" src="assets/images/projects/projects-suiffhome.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">SUIFF</h5>
-            <p class="card-text"><small class="text-muted">Estel Grup, S.L</small></p>
-            <p class="card-text">Aplicación móvil destinada a medir y mejorar nuestras marcas durante los entrenamientos, mediante la medición de la fuerza aplicada a través de un sensor durante los diferentes ejercicios que ofrece.</p>
-            <p><b>Stack tecnológico: Android nativo, Android Studio, Java, SQLite, REST API</b></p>
-            <button class="btn btn-info btn-block">Más información</button>
-        </div>
-    </div>
+<owl-carousel-o *ngIf="projectsList.length > 0" [options]="owlCarouselOptions">
+    <ng-container *ngFor="let project of projectsList">
+        <ng-template carouselSlide>
+            <img class="img-thumbnail" src="{{ project.mainImage }}" alt="">
+            <div class="row">
+                <div class="col-12 text-center">
 
-    <div class="card">
-        <img class="card-img-top" src="assets/images/projects/projects-suiffpro.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">SUIFF Professional</h5>
-            <p class="card-text"><small class="text-muted">Estel Grup, S.L</small></p>
-            <p class="card-text">Aplicación móvil para realizar, en tiempo real, valoraciones funcionales de fuerza en acciones dinámicas e isométricas. Enfocada a profesionales del acondicionamiento físico y la rehabilitación.</p>
-            <p><b>Stack tecnológico: Android nativo, Android Studio, Java, SQLite, REST API</b></p>
-            <button class="btn btn-info btn-block">Más información</button>
-        </div>
-    </div>
+                    <p class="project-title"><a href="{{ project.link }}" target="_blank">{{ project.title }} <i class="fas fa-external-link-alt"></i></a></p>
+                    <p class="project-company">{{ project.company }}</p>
+                    <hr>
+                    <p class="project-description">{{ project.description }}</p>
 
-    <div class="card">
-        <img class="card-img-top" src="assets/images/projects/projects-caixabank.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Desarrollo de software en proyecto bancario</h5>
-            <p class="card-text"><small class="text-muted">Indra Sistemas, S.A</small></p>
-            <p class="card-text">Desarrollo de aplicaciones para un proyecto de CaixaBank.</p>
-            <p><b>Stack tecnológico: arquitectura ABSIS, TF7, Java, Spring, JSP, microservicios</b></p>
-            <button class="btn btn-info btn-block">Más información</button>
-        </div>
-    </div>
+                    <table>
+                        <tr></tr>
+                    </table>
 
-    <div class="card">
-        <img class="card-img-top" src="assets/images/projects/projects-hcb.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Smart Restaurant</h5>
-            <p class="card-text"><small class="text-muted">Happy Customer Box, S.L</small></p>
-            <p class="card-text">Digitalización de la carta y de toda la experiencia gastronómica para restaurantes gourmet de Barcelona.</p>
-            <p><b>Stack tecnológico: Android nativo, Android Studio, Java, Firebase, sockets</b></p>
-            <button class="btn btn-info btn-block">Más información</button>
-        </div>
-    </div>
-</div>
+                    <div class="row bean-row">
+                        <div *ngFor="let bean of project.stack" class="col-lg-6 col-md-6">
+                            <p class="bean">{{ bean }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </ng-container>
+</owl-carousel-o>
+<br>

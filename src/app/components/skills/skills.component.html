@@ -5,56 +5,27 @@
 <div class="mb-5" id="skills-languages">
     <h2><span>Lenguajes</span></h2>
     <div class="image-grid-container">
-        <img src="assets/icons/lenguajes/csharp.jpg" class="img-thumbnail" alt="...">
-        <img src="assets/icons/lenguajes/css.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/lenguajes/html.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/lenguajes/java.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/lenguajes/javascript.png" class="img-thumbnail" alt="...">
-
-        <img src="assets/icons/lenguajes/markdown.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/lenguajes/plsql.jpg" class="img-thumbnail" alt="...">
-        <img src="assets/icons/lenguajes/sql.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/lenguajes/typescript.jpg" class="img-thumbnail" alt="...">
-        <img src="assets/icons/lenguajes/xml.png" class="img-thumbnail" alt="...">
+        <img *ngFor="let skill of languages" src="{{ skill.imageUrl }}" class="img-thumbnail" alt="{{ skill.title }}">
     </div>
 </div>
 
 <div class="mb-5" id="skills-frameworks">
     <h2><span>Frameworks</span></h2>
     <div class="image-grid-container">
-        <img src="assets/icons/frameworks/absis.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/frameworks/android.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/frameworks/angular.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/frameworks/bootstrap.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/frameworks/ionic.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/frameworks/nodejs.png" class="img-thumbnail" alt="...">
+        <img *ngFor="let skill of frameworks" src="{{ skill.imageUrl }}" class="img-thumbnail" alt="{{ skill.title }}">
     </div>
 </div>
 
 <div class="mb-5" id="skills-tools">
     <h2><span>Herramientas</span></h2>
     <div class="image-grid-container">
-        <img src="assets/icons/tools/illustrator.jpg" class="img-thumbnail" alt="...">
-        <img src="assets/icons/tools/firebase.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/tools/gimp.jpg" class="img-thumbnail" alt="...">
-        <img src="assets/icons/tools/git.jpg" class="img-thumbnail" alt="...">
-        <img src="assets/icons/tools/gradle.png" class="img-thumbnail" alt="...">
-
-        <img src="assets/icons/tools/heroku.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/tools/hibernate.jpg" class="img-thumbnail" alt="...">
-        <img src="assets/icons/tools/jira.jpg" class="img-thumbnail" alt="...">
-        <img src="assets/icons/tools/maven.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/tools/postman.png" class="img-thumbnail" alt="...">
+        <img *ngFor="let skill of tools" src="{{ skill.imageUrl }}" class="img-thumbnail" alt="{{ skill.title }}">
     </div>
 </div>
 
 <div class="mb-5" id="skills-ide">
     <h2><span>IDEs</span></h2>
     <div class="image-grid-container">
-        <img src="assets/icons/ide/androidstudio.jpg" class="img-thumbnail" alt="...">
-        <img src="assets/icons/ide/eclipse.jpg" class="img-thumbnail" alt="...">
-        <img src="assets/icons/ide/netbeans.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/ide/visual.png" class="img-thumbnail" alt="...">
-        <img src="assets/icons/ide/vscode.jpg" class="img-thumbnail" alt="...">
+        <img *ngFor="let skill of ide" src="{{ skill.imageUrl }}" class="img-thumbnail" alt="{{ skill.title }}">
     </div>
 </div>

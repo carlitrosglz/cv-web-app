@@ -1,9 +1,54 @@
-.main-title {
+h1,
+p {
     font-family: 'Poppins', sans-serif;
 }
 
 .subtitle {
-    font-family: 'Poppins', sans-serif;
     font-weight: 100;
     color: #6e6e6e;
+}
+
+.project-title {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.project-company {
+    font-weight: 100;
+    font-size: 1.1rem;
+    margin-top: -10px;
+}
+
+.project-description {
+    font-weight: 100;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.bean {
+    background-color: #242424;
+    font-size: 0.8rem;
+    color: white;
+    display: list-item;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.bean-row {
+    justify-content: center;
+}
+
+hr {
+    background-color: grey;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    text-decoration-line: none;
 }
