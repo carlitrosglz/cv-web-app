@@ -31,6 +31,7 @@ a:hover {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    #navbarNav {}
+.navbar-toggler {
+    background-color: white;
+    border: 0px;
 }
