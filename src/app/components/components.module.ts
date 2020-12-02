@@ -7,7 +7,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 
 // our components
 import { NavbarComponent } from './navbar/navbar.component';
-import { SliderComponent } from './slider/slider.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { CareerComponent } from './career/career.component';
 import { CareerEntryComponent } from './career-entry/career-entry.component';
@@ -18,7 +17,6 @@ import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     NavbarComponent,
-    SliderComponent,
     ProjectsComponent,
     CareerComponent,
     CareerEntryComponent,
@@ -34,7 +32,6 @@ import { FooterComponent } from './footer/footer.component';
   ],
   exports: [
     NavbarComponent,
-    SliderComponent,
     ProjectsComponent,
     CareerComponent,
     SkillsComponent,

@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DEPLOYMENT_VERSION } from '../../../environments/environment';
-
-
 
 @Component({
   selector: 'app-footer',
@@ -9,8 +6,6 @@ import { DEPLOYMENT_VERSION } from '../../../environments/environment';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-
-  public version = DEPLOYMENT_VERSION;
 
   constructor() { }
 

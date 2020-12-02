@@ -1,5 +1,3 @@
-import { Versioning } from '../app/interfaces/versioning.interface';
-
 export const environment = {
   production: true,
   firebase: {
@@ -12,10 +10,4 @@ export const environment = {
     appId: '1:85243950971:web:9da35d418e6c0e5c8a2fde',
     measurementId: 'G-G9VMKVF99R'
   }
-};
-
-export const DEPLOYMENT_VERSION: Versioning = {
-  development: '0.0.1',
-  preproduction: '1.0.0',
-  production: '1.0.0'
 };
