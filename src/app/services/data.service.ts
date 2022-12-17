@@ -10,7 +10,7 @@ import { ProjectsModel, CareerDataModel, SkillsModel, PersonalInfoModel } from '
 })
 export class DataService {
 
-  private CV_LINK = 'https://firebasestorage.googleapis.com/v0/b/cv-portfolio-carlos.appspot.com/o/files%2Fcv_carlosgonzalezespejo_ES.pdf?alt=media&token=3888c969-41ef-4314-8bec-c43d8de57f7f';
+  private CV_LINK = 'https://firebasestorage.googleapis.com/v0/b/cv-portfolio-carlos.appspot.com/o/files%2Fcv_carlosgonzalezespejo_ES.pdf?alt=media&token=94dc8595-5d89-4ead-bd4f-b5b1ef953fe7';
 
   constructor(private firestore: AngularFirestore) { }
 
